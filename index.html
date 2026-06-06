@@ -14,24 +14,31 @@
     <span class="cn">烈哥客家面</span>
     <span class="en">Leekko Hakka Mee · Since 1974</span>
   </a>
-  <div class="nav-links">
-    <a href="#story">品牌故事</a>
-    <a href="#craft">制面工艺</a>
-    <a href="#menu">菜　单</a>
-    <a href="#find">寻味门店</a>
-    <a href="#gallery">影　像</a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#story" data-i18n="nav.story">品牌故事</a>
+      <a href="#craft" data-i18n="nav.craft">制面工艺</a>
+      <a href="#menu" data-i18n="nav.menu">菜　单</a>
+      <a href="#find" data-i18n="nav.find">寻味门店</a>
+      <a href="#gallery" data-i18n="nav.gallery">影　像</a>
+    </div>
+    <div class="lang-switch" role="group" aria-label="语言 / Language">
+      <button type="button" data-lang="zh" lang="zh-Hans">中</button>
+      <button type="button" data-lang="ms" lang="ms">BM</button>
+      <button type="button" data-lang="en" lang="en">EN</button>
+    </div>
+    <button class="menu-btn" aria-label="菜单"><span></span><span></span><span></span></button>
   </div>
-  <button class="menu-btn" aria-label="菜单"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- mobile drawer -->
 <div class="drawer">
-  <a href="#story"><span class="idx">01</span>品牌故事</a>
-  <a href="#craft"><span class="idx">02</span>制面工艺</a>
-  <a href="#menu"><span class="idx">03</span>菜　单</a>
-  <a href="#find"><span class="idx">04</span>寻味门店</a>
-  <a href="#gallery"><span class="idx">05</span>影　像</a>
-  <div class="drawer-foot">怡保 · 客家手作面 · Since 1974</div>
+  <a href="#story" data-i18n="dw.story"><span class="idx">01</span>品牌故事</a>
+  <a href="#craft" data-i18n="dw.craft"><span class="idx">02</span>制面工艺</a>
+  <a href="#menu" data-i18n="dw.menu"><span class="idx">03</span>菜　单</a>
+  <a href="#find" data-i18n="dw.find"><span class="idx">04</span>寻味门店</a>
+  <a href="#gallery" data-i18n="dw.gallery"><span class="idx">05</span>影　像</a>
+  <div class="drawer-foot" data-i18n="dw.foot">怡保 · 客家手作面 · Since 1974</div>
 </div>
 
 <!-- ======================= HERO ======================= -->
@@ -39,28 +46,28 @@
   <img class="hero-bg" src="uploads/craft_1.png" alt="凌晨揉面的师傅">
   <div class="hero-veil"></div>
   <div class="hero-inner">
-    <span class="eyebrow reveal">怡保 · 客家手作面</span>
-    <h1 class="hero-title reveal d1">一碗不变的<br>古早味<span class="yr"> 自 1974</span></h1>
+    <span class="eyebrow reveal" data-i18n="hero.eyebrow">怡保 · 客家手作面</span>
+    <h1 class="hero-title reveal d1" data-i18n="hero.title">一碗不变的<br>古早味<span class="yr"> 自 1974</span></h1>
     <p class="hero-sub reveal d2">
-      三代传承，一根正艾木棍，压出半世纪不曾改变的味道。
-      <span class="en">Handcrafted since 1974 · Three generations, one recipe</span>
+      <span data-i18n="hero.sub">三代传承，一根正艾木棍，压出半世纪不曾改变的味道。</span>
+      <span class="en" data-i18n="hero.subEn">Handcrafted since 1974 · Three generations, one recipe</span>
     </p>
     <div class="hero-cta reveal d3">
-      <a href="#story" class="btn btn-primary">了解我们的故事 <span class="arr">→</span></a>
-      <a href="#find" class="hero-announce"><span class="ha-dot"></span>翠林城新店 · 6月5日试营业<span class="arr">→</span></a>
+      <a href="#story" class="btn btn-primary" data-i18n="hero.btn">了解我们的故事 <span class="arr">→</span></a>
+      <a href="#find" class="hero-announce"><span class="ha-dot"></span><span data-i18n="hero.announce">翠林城新店 · 6月5日试营业</span><span class="arr">→</span></a>
     </div>
   </div>
-  <div class="scroll-hint"><span>向下滑动</span><span class="line"></span></div>
+  <div class="scroll-hint"><span data-i18n="hero.scroll">向下滑动</span><span class="line"></span></div>
 </header>
 
 <!-- ======================= MANIFESTO ======================= -->
 <section class="manifesto">
   <div class="wrap">
-    <span class="eyebrow reveal">我们的根 · Our Roots</span>
-    <p class="big reveal d1" style="margin-top:1.4rem">
+    <span class="eyebrow reveal" data-i18n="man.eyebrow">我们的根 · Our Roots</span>
+    <p class="big reveal d1" style="margin-top:1.4rem" data-i18n="man.big">
       凌晨三点，<span class="accent">磨面的人</span>已经醒来。
     </p>
-    <p class="body reveal d2">
+    <p class="body reveal d2" data-i18n="man.body">
       五十年来，从怡保国泰茶室的一方面档，到今天熙攘的店面，烈哥客家面只做一件事——
       把一团全蛋面，用同一根自 1974 年沿用至今的正艾木棍，压出三代人记忆里的那个味道。
       面、鱼丸、酿料，样样手作，日日新鲜。这是关于耐心、手艺与家的故事。
@@ -69,23 +76,23 @@
     <div class="stats reveal d2">
       <div class="stat">
         <div class="num">1974</div>
-        <div class="lab">创立之年</div>
-        <div class="en">Established</div>
+        <div class="lab" data-i18n="man.s1lab">创立之年</div>
+        <div class="en" data-i18n="man.s1en">Established</div>
       </div>
       <div class="stat">
-        <div class="num cn">三代</div>
-        <div class="lab">同心传承</div>
-        <div class="en">Generations</div>
+        <div class="num cn" data-i18n="man.s2num">三代</div>
+        <div class="lab" data-i18n="man.s2lab">同心传承</div>
+        <div class="en" data-i18n="man.s2en">Generations</div>
       </div>
       <div class="stat">
-        <div class="num">3<span style="font-family:var(--font-serif-cn);font-size:0.5em;font-weight:700">时</span></div>
-        <div class="lab">凌晨开工</div>
-        <div class="en">Every morning</div>
+        <div class="num" data-i18n="man.s3num">3<span style="font-family:var(--font-serif-cn);font-size:0.5em;font-weight:700">时</span></div>
+        <div class="lab" data-i18n="man.s3lab">凌晨开工</div>
+        <div class="en" data-i18n="man.s3en">Every morning</div>
       </div>
       <div class="stat">
-        <div class="num cn">手作</div>
-        <div class="lab">日日新鲜</div>
-        <div class="en">Made by hand</div>
+        <div class="num cn" data-i18n="man.s4num">手作</div>
+        <div class="lab" data-i18n="man.s4lab">日日新鲜</div>
+        <div class="en" data-i18n="man.s4en">Made by hand</div>
       </div>
     </div>
   </div>
@@ -95,18 +102,18 @@
 <section class="story" id="story">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow reveal">品牌故事 · Our Story</span>
-      <h2 class="reveal d1">三代人，一根木棍</h2>
-      <p class="lead reveal d2">一团白色的客家面，串起了一个家族半个世纪的清晨。</p>
+      <span class="eyebrow reveal" data-i18n="story.eyebrow">品牌故事 · Our Story</span>
+      <h2 class="reveal d1" data-i18n="story.h2">三代人，一根木棍</h2>
+      <p class="lead reveal d2" data-i18n="story.lead">一团白色的客家面，串起了一个家族半个世纪的清晨。</p>
     </div>
 
     <div class="timeline">
       <article class="tl-item reveal">
         <div class="tl-year">1974</div>
         <div class="tl-body">
-          <h3>面档的开始</h3>
-          <p>黄烈（Wong Leek）在怡保国泰茶室支起面档，以家乡的客家手作面起家。一根正艾木棍，从此开始压面。</p>
-          <span class="en">Wong Leek starts the stall at Cathay Tea House, Ipoh</span>
+          <h3 data-i18n="story.t1h">面档的开始</h3>
+          <p data-i18n="story.t1p">黄烈（Wong Leek）在怡保国泰茶室支起面档，以家乡的客家手作面起家。一根正艾木棍，从此开始压面。</p>
+          <span class="en" data-i18n="story.t1en">Wong Leek starts the stall at Cathay Tea House, Ipoh</span>
         </div>
         <div class="tl-photo"><img src="uploads/craft_8.png" alt="家族旧照"></div>
       </article>
@@ -114,9 +121,9 @@
       <article class="tl-item reveal">
         <div class="tl-year">1997</div>
         <div class="tl-body">
-          <h3>第二代接手</h3>
-          <p>女婿何德财（Ho Teck Chai）接过手艺，承袭岳父的压面绝活，凌晨三时起灶，把全蛋面的筋道一代代传下去。</p>
-          <span class="en">Son-in-law Ho Teck Chai joins and learns the recipe</span>
+          <h3 data-i18n="story.t2h">第二代接手</h3>
+          <p data-i18n="story.t2p">女婿何德财（Ho Teck Chai）接过手艺，承袭岳父的压面绝活，凌晨三时起灶，把全蛋面的筋道一代代传下去。</p>
+          <span class="en" data-i18n="story.t2en">Son-in-law Ho Teck Chai joins and learns the recipe</span>
         </div>
         <div class="tl-photo"><img src="uploads/employee.png" alt="第二代手作"></div>
       </article>
@@ -124,9 +131,9 @@
       <article class="tl-item reveal">
         <div class="tl-year">2026</div>
         <div class="tl-body">
-          <h3>第二间店，落户翠林城</h3>
-          <p>招牌挂上的那天，第二间店在翠林城 Bandar Cyber 试营业。从一个小档口走到今天，传统竹升客家面的手艺，得以继续传承下去。</p>
-          <span class="en">A second shop opens at Bandar Cyber, Ipoh</span>
+          <h3 data-i18n="story.t3h">第二间店，落户翠林城</h3>
+          <p data-i18n="story.t3p">招牌挂上的那天，第二间店在翠林城 Bandar Cyber 试营业。从一个小档口走到今天，传统竹升客家面的手艺，得以继续传承下去。</p>
+          <span class="en" data-i18n="story.t3en">A second shop opens at Bandar Cyber, Ipoh</span>
         </div>
         <div class="tl-photo"><img src="uploads/store_cyber.jpg" alt="翠林城新店招牌"></div>
       </article>
@@ -134,8 +141,8 @@
 
     <div class="quote-callout reveal">
       <div class="mark">”</div>
-      <blockquote>那一团白色的客家面，<br>是三代人的共同回忆。</blockquote>
-      <cite>— 烈哥客家面</cite>
+      <blockquote data-i18n="story.quote">那一团白色的客家面，<br>是三代人的共同回忆。</blockquote>
+      <cite data-i18n="story.cite">— 烈哥客家面</cite>
     </div>
   </div>
 </section>
@@ -144,49 +151,49 @@
 <section class="craft" id="craft">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow reveal">制面工艺 · The Craft</span>
-      <h2 class="reveal d1">慢工，才出古早味</h2>
-      <p class="lead reveal d2">没有捷径。每一道工序，都和五十年前一样，靠的是一双手与一身气力。</p>
+      <span class="eyebrow reveal" data-i18n="craft.eyebrow">制面工艺 · The Craft</span>
+      <h2 class="reveal d1" data-i18n="craft.h2">慢工，才出古早味</h2>
+      <p class="lead reveal d2" data-i18n="craft.lead">没有捷径。每一道工序，都和五十年前一样，靠的是一双手与一身气力。</p>
     </div>
 
     <div class="craft-list">
       <article class="craft-row reveal">
         <div class="craft-img"><img src="uploads/craft_1.png" alt="全蛋揉面"></div>
         <div class="craft-txt">
-          <span class="craft-num">01 / 全蛋制作</span>
-          <h3>不加一滴水</h3>
-          <p>只用全蛋揉面，不掺一滴水。面香更浓郁，色泽金黄透亮，是机器面学不来的厚度。</p>
-          <span class="en">100% egg noodle — no water, only eggs</span>
+          <span class="craft-num" data-i18n="craft.n1">01 / 全蛋制作</span>
+          <h3 data-i18n="craft.h1">不加一滴水</h3>
+          <p data-i18n="craft.p1">只用全蛋揉面，不掺一滴水。面香更浓郁，色泽金黄透亮，是机器面学不来的厚度。</p>
+          <span class="en" data-i18n="craft.e1">100% egg noodle — no water, only eggs</span>
         </div>
       </article>
 
       <article class="craft-row reveal">
         <div class="craft-img"><img src="uploads/craft_5.png" alt="木棍压面"></div>
         <div class="craft-txt">
-          <span class="craft-num">02 / 正艾木棍碾压</span>
-          <h3>同一根木棍，用了五十年</h3>
-          <p>以身压面，用的是自 1974 年沿用至今的同一根正艾木棍，替代了早年的竹升。面的筋道与爽弹，全凭这一压一碾。</p>
-          <span class="en">Pressed with the same Chengal stick used since 1974</span>
+          <span class="craft-num" data-i18n="craft.n2">02 / 正艾木棍碾压</span>
+          <h3 data-i18n="craft.h2b">同一根木棍，用了五十年</h3>
+          <p data-i18n="craft.p2">以身压面，用的是自 1974 年沿用至今的同一根正艾木棍，替代了早年的竹升。面的筋道与爽弹，全凭这一压一碾。</p>
+          <span class="en" data-i18n="craft.e2">Pressed with the same Chengal stick used since 1974</span>
         </div>
       </article>
 
       <article class="craft-row reveal">
         <div class="craft-img"><img src="uploads/craft_4.png" alt="凌晨制面"></div>
         <div class="craft-txt">
-          <span class="craft-num">03 / 凌晨三时开工</span>
-          <h3>天未亮，面先香</h3>
-          <p>磨面的人凌晨三点便已起身。当城市还在沉睡，第一批面已经在案上成形，只为赶上清晨那第一碗。</p>
-          <span class="en">The noodle-maker wakes at 3am</span>
+          <span class="craft-num" data-i18n="craft.n3">03 / 凌晨三时开工</span>
+          <h3 data-i18n="craft.h3b">天未亮，面先香</h3>
+          <p data-i18n="craft.p3">磨面的人凌晨三点便已起身。当城市还在沉睡，第一批面已经在案上成形，只为赶上清晨那第一碗。</p>
+          <span class="en" data-i18n="craft.e3">The noodle-maker wakes at 3am</span>
         </div>
       </article>
 
       <article class="craft-row reveal">
         <div class="craft-img"><img src="uploads/craft_3.png" alt="手工酿料"></div>
         <div class="craft-txt">
-          <span class="craft-num">04 / 冷冻汆烫</span>
-          <h3>爽脆弹牙的秘密</h3>
-          <p>面条冷冻定型后再下锅汆烫，锁住口感。连同手工酿豆腐、酿苦瓜、西刀鱼丸，全都现做现卖，新鲜看得见。</p>
-          <span class="en">Frozen, then blanched — for that signature springy bite</span>
+          <span class="craft-num" data-i18n="craft.n4">04 / 冷冻汆烫</span>
+          <h3 data-i18n="craft.h4b">爽脆弹牙的秘密</h3>
+          <p data-i18n="craft.p4">面条冷冻定型后再下锅汆烫，锁住口感。连同手工酿豆腐、酿苦瓜、西刀鱼丸，全都现做现卖，新鲜看得见。</p>
+          <span class="en" data-i18n="craft.e4">Frozen, then blanched — for that signature springy bite</span>
         </div>
       </article>
     </div>
@@ -197,59 +204,59 @@
 <section class="menu" id="menu">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow reveal">菜单 · Menu</span>
-      <h2 class="reveal d1">简单几味，做了五十年</h2>
-      <p class="menu-note reveal d2">价格皆在 RM 20 以下　·　仅供参考，店内现点现做，恕不提供线上点餐</p>
+      <span class="eyebrow reveal" data-i18n="menu.eyebrow">菜单 · Menu</span>
+      <h2 class="reveal d1" data-i18n="menu.h2">简单几味，做了五十年</h2>
+      <p class="menu-note reveal d2" data-i18n="menu.note">价格皆在 RM 20 以下　·　仅供参考，店内现点现做，恕不提供线上点餐</p>
     </div>
 
     <div class="menu-cols reveal">
       <div>
         <div class="menu-group">
-          <div class="menu-group-head"><span class="cn">面食</span><span class="en">Noodles</span></div>
+          <div class="menu-group-head"><span class="cn" data-i18n="menu.g1">面食</span><span class="en" data-i18n="menu.g1en">Noodles</span></div>
           <div class="menu-item">
-            <div><div class="mi-name">竹升客家面（干捞）</div><div class="mi-en">Dry Hakka Mee</div></div>
-            <div class="mi-price">招牌</div>
-            <div class="mi-desc">全蛋手作面，拌上猪油与酱汁，爽弹有筋道——最见功夫的一碗。</div>
+            <div><div class="mi-name" data-i18n="menu.i1n">竹升客家面（干捞）</div><div class="mi-en" data-i18n="menu.i1en">Dry Hakka Mee</div></div>
+            <div class="mi-price" data-i18n="menu.i1p">招牌</div>
+            <div class="mi-desc" data-i18n="menu.i1d">全蛋手作面，拌上猪油与酱汁，爽弹有筋道——最见功夫的一碗。</div>
           </div>
           <div class="menu-item">
-            <div><div class="mi-name">客家汤面</div><div class="mi-en">Soup Hakka Mee</div></div>
-            <div class="mi-price">小鱼干</div>
-            <div class="mi-desc">小鱼干熬底，汤清味鲜，配上手工鱼丸与酿料，暖胃暖心。</div>
+            <div><div class="mi-name" data-i18n="menu.i2n">客家汤面</div><div class="mi-en" data-i18n="menu.i2en">Soup Hakka Mee</div></div>
+            <div class="mi-price" data-i18n="menu.i2p">小鱼干</div>
+            <div class="mi-desc" data-i18n="menu.i2d">小鱼干熬底，汤清味鲜，配上手工鱼丸与酿料，暖胃暖心。</div>
           </div>
           <div class="menu-item">
-            <div><div class="mi-name">咖喱客家面</div><div class="mi-en">Curry Hakka Mee</div></div>
-            <div class="mi-price">浓香</div>
-            <div class="mi-desc">南洋风味咖喱，浓而不腻，裹住每一根面条。</div>
+            <div><div class="mi-name" data-i18n="menu.i3n">咖喱客家面</div><div class="mi-en" data-i18n="menu.i3en">Curry Hakka Mee</div></div>
+            <div class="mi-price" data-i18n="menu.i3p">浓香</div>
+            <div class="mi-desc" data-i18n="menu.i3d">南洋风味咖喱，浓而不腻，裹住每一根面条。</div>
           </div>
         </div>
       </div>
 
       <div>
         <div class="menu-group">
-          <div class="menu-group-head"><span class="cn">手工配料</span><span class="en">Handmade Sides</span></div>
+          <div class="menu-group-head"><span class="cn" data-i18n="menu.g2">手工配料</span><span class="en" data-i18n="menu.g2en">Handmade Sides</span></div>
           <div class="menu-item">
-            <div><div class="mi-name">手工酿豆腐</div><div class="mi-en">Yong Tau Foo</div></div>
-            <div class="mi-price">现做</div>
+            <div><div class="mi-name" data-i18n="menu.i4n">手工酿豆腐</div><div class="mi-en" data-i18n="menu.i4en">Yong Tau Foo</div></div>
+            <div class="mi-price" data-i18n="menu.i4p">现做</div>
           </div>
           <div class="menu-item">
-            <div><div class="mi-name">酿辣椒 · 酿苦瓜</div><div class="mi-en">Stuffed Chilli & Bitter Gourd</div></div>
-            <div class="mi-price">现做</div>
+            <div><div class="mi-name" data-i18n="menu.i5n">酿辣椒 · 酿苦瓜</div><div class="mi-en" data-i18n="menu.i5en">Stuffed Chilli &amp; Bitter Gourd</div></div>
+            <div class="mi-price" data-i18n="menu.i5p">现做</div>
           </div>
           <div class="menu-item">
-            <div><div class="mi-name">西刀鱼丸</div><div class="mi-en">Wolf-Herring Fish Ball</div></div>
-            <div class="mi-price">手打</div>
+            <div><div class="mi-name" data-i18n="menu.i6n">西刀鱼丸</div><div class="mi-en" data-i18n="menu.i6en">Wolf-Herring Fish Ball</div></div>
+            <div class="mi-price" data-i18n="menu.i6p">手打</div>
           </div>
           <div class="menu-item">
-            <div><div class="mi-name">飞丸</div><div class="mi-en">Fei Yuan Fish Ball</div></div>
-            <div class="mi-price">手打</div>
+            <div><div class="mi-name" data-i18n="menu.i7n">飞丸</div><div class="mi-en" data-i18n="menu.i7en">Fei Yuan Fish Ball</div></div>
+            <div class="mi-price" data-i18n="menu.i7p">手打</div>
           </div>
         </div>
 
         <div class="menu-group">
-          <div class="menu-group-head"><span class="cn">饮品</span><span class="en">Drinks</span></div>
+          <div class="menu-group-head"><span class="cn" data-i18n="menu.g3">饮品</span><span class="en" data-i18n="menu.g3en">Drinks</span></div>
           <div class="menu-item">
-            <div><div class="mi-name">古早白咖啡</div><div class="mi-en">Old-Town White Coffee</div></div>
-            <div class="mi-price">怡保</div>
+            <div><div class="mi-name" data-i18n="menu.i8n">古早白咖啡</div><div class="mi-en" data-i18n="menu.i8en">Old-Town White Coffee</div></div>
+            <div class="mi-price" data-i18n="menu.i8p">怡保</div>
           </div>
         </div>
       </div>
@@ -267,20 +274,20 @@
 <section class="find" id="find">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow reveal">寻味门店 · Find Us</span>
-      <h2 class="reveal d1">新店开张 · 翠林城</h2>
-      <p class="lead reveal d2">第二间店落户翠林城 Bandar Cyber。6月5日试营业——欢迎来吃一碗刚挂上招牌的古早味客家面。</p>
+      <span class="eyebrow reveal" data-i18n="find.eyebrow">寻味门店 · Find Us</span>
+      <h2 class="reveal d1" data-i18n="find.h2">新店开张 · 翠林城</h2>
+      <p class="lead reveal d2" data-i18n="find.lead">第二间店落户翠林城 Bandar Cyber。6月5日试营业——欢迎来吃一碗刚挂上招牌的古早味客家面。</p>
     </div>
 
     <article class="store-feature reveal">
       <div class="sf-photo">
         <img src="uploads/store_cyber.jpg" alt="翠林城新店招牌挂上">
-        <span class="sf-ribbon"><span class="dot"></span>6月5日 试营业 · NOW OPEN</span>
+        <span class="sf-ribbon"><span class="dot"></span><span data-i18n="find.ribbon">6月5日 试营业 · NOW OPEN</span></span>
       </div>
       <div class="store-info sf-info">
-        <span class="badge">最新开张 · Newest Branch</span>
-        <h3>翠林城 · 烈哥客家面</h3>
-        <p class="sf-tagline">「从一个小档口，到第二间店。招牌已经挂上，我们准备好了。」</p>
+        <span class="badge" data-i18n="find.fBadge">最新开张 · Newest Branch</span>
+        <h3 data-i18n="find.fName">翠林城 · 烈哥客家面</h3>
+        <p class="sf-tagline" data-i18n="find.fTag">「从一个小档口，到第二间店。招牌已经挂上，我们准备好了。」</p>
         <div class="store-row">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
           <a href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Bandar%20Cyber%20Ipoh" target="_blank" rel="noopener noreferrer">No. 26, Jalan Lapangan Siber 6, Bandar Cyber, 31350 Ipoh, Perak</a>
@@ -291,15 +298,15 @@
         </div>
         <div class="store-row">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <span>每日 7:00am – 1:00pm<br><span class="closed">每逢星期五休息</span></span>
+          <span data-i18n="find.fHours">每日 7:00am – 1:00pm<br><span class="closed">每逢星期五休息</span></span>
         </div>
         <div class="sf-cta">
-          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Bandar%20Cyber%20Ipoh" target="_blank" rel="noopener noreferrer">查看路线 <span class="arr">→</span></a>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Bandar%20Cyber%20Ipoh" target="_blank" rel="noopener noreferrer" data-i18n="find.directions">查看路线 <span class="arr">→</span></a>
         </div>
       </div>
     </article>
 
-    <h3 class="more-stores-label reveal">其他门店 · More Locations</h3>
+    <h3 class="more-stores-label reveal" data-i18n="find.more">其他门店 · More Locations</h3>
     <div class="stores">
       <article class="store-card reveal">
         <a class="store-map" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Jubilee%20Ipoh" target="_blank" rel="noopener noreferrer" aria-label="在 Google 地图查看 街场本店">
@@ -311,18 +318,18 @@
           </div>
         </a>
         <div class="store-info">
-          <span class="badge">本店 · Original</span>
-          <h3>街场本店</h3>
+          <span class="badge" data-i18n="find.s1Badge">本店 · Original</span>
+          <h3 data-i18n="find.s1Name">街场本店</h3>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Jubilee%20Ipoh" target="_blank" rel="noopener noreferrer">18, Jalan Theatre, Taman Jubilee, 30300 Ipoh, Perak</a>
           </div>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <span>周六 – 周四　7:00am – 12:30pm<br><span class="closed">周五休息</span></span>
+            <span data-i18n="find.s1Hours">周六 – 周四　7:00am – 12:30pm<br><span class="closed">周五休息</span></span>
           </div>
           <div class="store-cta">
-            <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Jubilee%20Ipoh" target="_blank" rel="noopener noreferrer">查看路线 <span class="arr">→</span></a>
+            <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Jubilee%20Ipoh" target="_blank" rel="noopener noreferrer" data-i18n="find.directions">查看路线 <span class="arr">→</span></a>
           </div>
         </div>
       </article>
@@ -337,18 +344,18 @@
           </div>
         </a>
         <div class="store-info">
-          <span class="badge">新店 · New Branch</span>
-          <h3>Taman Hoover 新店</h3>
+          <span class="badge" data-i18n="find.s2Badge">新店 · New Branch</span>
+          <h3 data-i18n="find.s2Name">Taman Hoover 新店</h3>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Hoover%20Ipoh" target="_blank" rel="noopener noreferrer">12, Jalan Bharu, Taman Hoover, 31650 Ipoh, Perak</a>
           </div>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <span>第三代主理　·　营业时间请留意官方社媒</span>
+            <span data-i18n="find.s2Hours">第三代主理　·　营业时间请留意官方社媒</span>
           </div>
           <div class="store-cta">
-            <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Hoover%20Ipoh" target="_blank" rel="noopener noreferrer">查看路线 <span class="arr">→</span></a>
+            <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20Taman%20Hoover%20Ipoh" target="_blank" rel="noopener noreferrer" data-i18n="find.directions">查看路线 <span class="arr">→</span></a>
           </div>
         </div>
       </article>
@@ -360,8 +367,8 @@
 <section class="gallery" id="gallery">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow reveal">影像 · Gallery</span>
-      <h2 class="reveal d1">面档日常</h2>
+      <span class="eyebrow reveal" data-i18n="gal.eyebrow">影像 · Gallery</span>
+      <h2 class="reveal d1" data-i18n="gal.h2">面档日常</h2>
     </div>
 
     <div class="gal-grid reveal">
@@ -408,25 +415,25 @@
           <span class="medallion"><span>面</span></span>
         </div>
         <div class="en">Leekko Hakka Mee · Restoran</div>
-        <div class="est">自 1974 年 · 怡保 Ipoh</div>
+        <div class="est" data-i18n="foot.est">自 1974 年 · 怡保 Ipoh</div>
       </div>
       <nav class="footer-nav">
-        <h4 style="font-family:var(--font-sans);">导览</h4>
-        <a href="#story">品牌故事</a>
-        <a href="#craft">制面工艺</a>
-        <a href="#menu">菜单</a>
-        <a href="#find">寻味门店</a>
-        <a href="#gallery">影像</a>
+        <h4 style="font-family:var(--font-sans);" data-i18n="foot.navTitle">导览</h4>
+        <a href="#story" data-i18n="nav.story">品牌故事</a>
+        <a href="#craft" data-i18n="nav.craft">制面工艺</a>
+        <a href="#menu" data-i18n="foot.menu">菜单</a>
+        <a href="#find" data-i18n="nav.find">寻味门店</a>
+        <a href="#gallery" data-i18n="foot.gallery">影像</a>
       </nav>
       <div class="footer-col">
-        <h4>关注我们</h4>
+        <h4 data-i18n="foot.followTitle">关注我们</h4>
         <p>Instagram&nbsp;&nbsp;@leekko_hakkamee</p>
         <p style="margin-top:0.4rem">Facebook&nbsp;&nbsp;Leekgor.Hakkamee.1974</p>
         <p style="margin-top:1rem">18, Jalan Theatre, Taman Jubilee, Ipoh</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 烈哥客家面 Leekko Hakka Mee · 三代手作 · 古早味相传</span>
+      <span data-i18n="foot.copy">© 2026 烈哥客家面 Leekko Hakka Mee · 三代手作 · 古早味相传</span>
       <span class="fb-social">
         <a href="https://www.instagram.com/leekko_hakkamee/" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://www.facebook.com/Leekgor.Hakkamee.1974/" target="_blank" rel="noopener noreferrer">Facebook</a>
@@ -443,6 +450,7 @@
   <button class="lb-nav lb-next" aria-label="下一张"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
 </div>
 
+<script src="leekko/i18n.js"></script>
 <script src="leekko/leekko.js"></script>
 </body>
 </html>
