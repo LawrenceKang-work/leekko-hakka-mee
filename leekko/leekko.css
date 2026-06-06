@@ -590,6 +590,28 @@ body.menu-open .drawer .drawer-foot { opacity: 1; }
 .store-row { display: flex; gap: 0.8rem; padding: 0.55rem 0; align-items: flex-start; color: var(--ink-soft); font-size: 0.98rem; }
 .store-row svg { flex: none; width: 17px; height: 17px; stroke: var(--terra); margin-top: 3px; }
 .store-row .closed { color: var(--terra-deep); font-weight: 500; }
+
+/* clickable address / phone within a store row */
+.store-row a { color: inherit; border-bottom: 1px solid transparent; transition: color .3s var(--ease), border-color .3s var(--ease); }
+.store-row a:hover { color: var(--terra); border-bottom-color: var(--terra); }
+
+/* whole decorative map becomes a real link to Google Maps */
+a.store-map { cursor: pointer; transition: filter .45s var(--ease); }
+a.store-map:hover { filter: saturate(1.12) brightness(1.03); }
+a.store-map:hover .pin { transform: translate(-50%,-100%) scale(1.12); }
+a.store-map .pin { transition: transform .45s var(--ease); }
+
+/* per-card "查看路线" text link (older stores) */
+.store-cta { margin-top: 1.3rem; }
+.store-link {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-sans-cn); font-weight: 600; font-size: 0.95rem;
+  letter-spacing: 0.04em; color: var(--terra); border: 0;
+}
+.store-link .arr { transition: transform .4s var(--ease); }
+.store-link:hover { color: var(--terra-deep); }
+.store-link:hover .arr { transform: translateX(5px); }
+
 @media (min-width: 820px) {
   .stores { grid-template-columns: 1fr 1fr; }
   .store-map { height: 220px; }
