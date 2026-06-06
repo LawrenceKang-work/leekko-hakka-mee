@@ -140,12 +140,12 @@
     'find.fHours':   { zh: '每日 7:00am – 1:00pm<br><span class="closed">每逢星期五休息</span>', ms: 'Setiap hari 7:00am – 1:00pm<br><span class="closed">Tutup setiap Jumaat</span>', en: 'Daily 7:00am – 1:00pm<br><span class="closed">Closed on Fridays</span>' },
     'find.directions':{ zh: '查看路线 <span class="arr">→</span>', ms: 'Lihat Laluan <span class="arr">→</span>', en: 'Get Directions <span class="arr">→</span>' },
     'find.more':     { zh: '其他门店 · More Locations', ms: 'Lokasi Lain', en: 'More Locations' },
-    'find.s1Badge':  { zh: '本店 · Original', ms: 'Kedai Asal', en: 'Original' },
-    'find.s1Name':   { zh: '街场本店', ms: 'Kedai Asal (Pekan)', en: 'The Original (Town)' },
-    'find.s1Hours':  { zh: '周六 – 周四　7:00am – 12:30pm<br><span class="closed">周五休息</span>', ms: 'Sabtu – Khamis　7:00am – 12:30pm<br><span class="closed">Tutup Jumaat</span>', en: 'Sat – Thu　7:00am – 12:30pm<br><span class="closed">Closed Fri</span>' },
-    'find.s2Badge':  { zh: '新店 · New Branch', ms: 'Cawangan Baharu', en: 'New Branch' },
-    'find.s2Name':   { zh: 'Taman Hoover 新店', ms: 'Cawangan Taman Hoover', en: 'Taman Hoover Branch' },
-    'find.s2Hours':  { zh: '第三代主理　·　营业时间请留意官方社媒', ms: 'Dikendalikan generasi ketiga　·　Sila semak media sosial rasmi untuk waktu operasi', en: 'Run by the third generation　·　Check our social media for opening hours' },
+    'find.s1Badge':  { zh: '休罗街本店 · Original', ms: 'Cawangan Asal', en: 'Original' },
+    'find.s1Name':   { zh: '休罗街本店', ms: 'Kedai Jalan Sultan Iskandar', en: 'Jalan Sultan Iskandar' },
+    'find.s1Hours':  { zh: '营业时间以 Google 地图为准', ms: 'Waktu operasi ikut Google Maps', en: 'See Google Maps for opening hours' },
+    'find.s2Badge':  { zh: '老字号 · Established', ms: 'Sejak Lama', en: 'Established' },
+    'find.s2Name':   { zh: 'Taman Hoover 店', ms: 'Cawangan Taman Hoover', en: 'Taman Hoover' },
+    'find.s2Hours':  { zh: '每日 7:00am 起 · 营业时间见地图', ms: 'Setiap hari dari 7:00am · lihat Google Maps', en: 'Daily from 7:00am · see Google Maps' },
 
     /* ---- GALLERY ---- */
     'gal.eyebrow': { zh: '影像 · Gallery', ms: 'Galeri', en: 'Gallery' },
