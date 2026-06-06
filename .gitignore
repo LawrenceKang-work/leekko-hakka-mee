@@ -1,0 +1,23 @@
+# dependencies (only if a tool ever adds them — this site needs none)
+node_modules/
+
+# logs
+*.log
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# env / secrets — never commit
+.env
+.env.*
+!.env.example
+
+# build output (none today; reserved)
+dist/
+.cache/

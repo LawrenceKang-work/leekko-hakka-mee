@@ -1,0 +1,11 @@
+{
+  "name": "leekko-hakka-mee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "烈哥客家面 Leekko Hakka Mee — heritage Hakka-noodle brand website (static)",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve ."
+  },
+  "license": "UNLICENSED"
+}
