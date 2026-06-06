@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <circle cx="32" cy="32" r="30" fill="#B12F20"/>
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#C7A24C" stroke-width="2.5"/>
+  <text x="32" y="33" text-anchor="middle" dominant-baseline="central"
+        font-family="'Noto Serif SC','Songti SC',serif" font-weight="900"
+        font-size="38" fill="#F5EED8">烈</text>
+</svg>
