@@ -147,6 +147,13 @@
     'find.s2Name':   { zh: 'Taman Hoover 店', ms: 'Cawangan Taman Hoover', en: 'Taman Hoover' },
     'find.s2Hours':  { zh: '每日 7:00am – 12:00pm<br><span class="closed">每逢星期五休息</span>', ms: 'Setiap hari 7:00am – 12:00pm<br><span class="closed">Tutup setiap Jumaat</span>', en: 'Daily 7:00am – 12:00pm<br><span class="closed">Closed on Fridays</span>' },
 
+    /* ---- BRANCH PAGES (独立分店页 · 三页共用) ---- */
+    'bp.heroSub':    { zh: '怡保客家手作面 · 自 1974 · 凌晨现做,日日新鲜。', ms: 'Mi Hakka buatan tangan Ipoh · sejak 1974 · dibuat segar setiap pagi.', en: 'Ipoh handcrafted Hakka noodles · since 1974 · made fresh each morning.' },
+    'bp.call':       { zh: '致电门店 <span class="arr">→</span>', ms: 'Telefon kedai <span class="arr">→</span>', en: 'Call this branch <span class="arr">→</span>' },
+    'bp.explore':    { zh: '了解品牌故事与菜单 <span class="arr">→</span>', ms: 'Kisah & menu kami <span class="arr">→</span>', en: 'Our story & menu <span class="arr">→</span>' },
+    'bp.others':     { zh: '其他分店 · Other Branches', ms: 'Cawangan Lain', en: 'Other Branches' },
+    'bp.pageLink':   { zh: '门店专页 <span class="arr">→</span>', ms: 'Halaman cawangan <span class="arr">→</span>', en: 'Branch page <span class="arr">→</span>' },
+
     /* ---- GALLERY ---- */
     'gal.eyebrow': { zh: '影像 · Gallery', ms: 'Galeri', en: 'Gallery' },
     'gal.h2':      { zh: '面档日常', ms: 'Hari-hari di Gerai', en: 'Life at the stall' },
