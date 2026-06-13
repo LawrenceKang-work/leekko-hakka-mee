@@ -3,7 +3,8 @@
    Heritage Hakka-noodle brand site — editorial / refined-nostalgic
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+/* 字体改由 index.html <head> 中 preconnect + 异步 stylesheet 加载，
+   不再用 @import（@import 会阻塞 CSS 解析与首屏渲染）。 */
 
 :root {
   /* paper / canvas */
@@ -60,7 +61,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
-img { display: block; max-width: 100%; }
+img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
 ::selection { background: var(--terra); color: var(--paper); }
 

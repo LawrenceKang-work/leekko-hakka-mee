@@ -21,3 +21,6 @@ desktop.ini
 # build output (none today; reserved)
 dist/
 .cache/
+
+# wrangler / CF Pages 本地缓存
+.wrangler/

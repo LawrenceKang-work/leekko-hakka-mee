@@ -1,0 +1,8 @@
+# 线上不需要的文件（源文件保留在本地，仅不上传到 Cloudflare Pages）
+# 旧 PNG 原图已全部转为 WebP 并被页面引用，原图无需上线
+uploads/*.png
+# 开发用文件
+README.md
+package.json
+.gitignore
+.assetsignore

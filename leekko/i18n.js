@@ -140,12 +140,12 @@
     'find.fHours':   { zh: '每日 7:00am – 1:00pm<br><span class="closed">每逢星期五休息</span>', ms: 'Setiap hari 7:00am – 1:00pm<br><span class="closed">Tutup setiap Jumaat</span>', en: 'Daily 7:00am – 1:00pm<br><span class="closed">Closed on Fridays</span>' },
     'find.directions':{ zh: '查看路线 <span class="arr">→</span>', ms: 'Lihat Laluan <span class="arr">→</span>', en: 'Get Directions <span class="arr">→</span>' },
     'find.more':     { zh: '其他门店 · More Locations', ms: 'Lokasi Lain', en: 'More Locations' },
-    'find.s1Badge':  { zh: '休罗街本店 · Original', ms: 'Cawangan Asal', en: 'Original' },
-    'find.s1Name':   { zh: '休罗街本店', ms: 'Kedai Jalan Sultan Iskandar', en: 'Jalan Sultan Iskandar' },
-    'find.s1Hours':  { zh: '营业时间以 Google 地图为准', ms: 'Waktu operasi ikut Google Maps', en: 'See Google Maps for opening hours' },
+    'find.s1Badge':  { zh: '市区老店 · Town', ms: 'Cawangan Bandar', en: 'Town Branch' },
+    'find.s1Name':   { zh: 'Jalan Theatre 店', ms: 'Cawangan Jalan Theatre', en: 'Jalan Theatre' },
+    'find.s1Hours':  { zh: '每日 7:00am – 12:30pm<br><span class="closed">每逢星期五休息</span>', ms: 'Setiap hari 7:00am – 12:30pm<br><span class="closed">Tutup setiap Jumaat</span>', en: 'Daily 7:00am – 12:30pm<br><span class="closed">Closed on Fridays</span>' },
     'find.s2Badge':  { zh: '老字号 · Established', ms: 'Sejak Lama', en: 'Established' },
     'find.s2Name':   { zh: 'Taman Hoover 店', ms: 'Cawangan Taman Hoover', en: 'Taman Hoover' },
-    'find.s2Hours':  { zh: '每日 7:00am 起 · 营业时间见地图', ms: 'Setiap hari dari 7:00am · lihat Google Maps', en: 'Daily from 7:00am · see Google Maps' },
+    'find.s2Hours':  { zh: '每日 7:00am – 12:00pm<br><span class="closed">每逢星期五休息</span>', ms: 'Setiap hari 7:00am – 12:00pm<br><span class="closed">Tutup setiap Jumaat</span>', en: 'Daily 7:00am – 12:00pm<br><span class="closed">Closed on Fridays</span>' },
 
     /* ---- GALLERY ---- */
     'gal.eyebrow': { zh: '影像 · Gallery', ms: 'Galeri', en: 'Gallery' },

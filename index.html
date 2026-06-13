@@ -2,15 +2,42 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="UTF-8">
+
+<!-- Google Tag Manager (Leekko Hakka Mee · GTM-W57Z9JVS) -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W57Z9JVS');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) — Google Analytics 4 (Leekko Hakka Mee) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JKJTZMCG6Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JKJTZMCG6Z');
+</script>
+
+<!-- Microsoft Clarity (Leekko Hakka Mee) -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x5xks7w0hl");
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="M4OEdsYrMuoGZjfe7bbrhGwQ6kZ3HgyMQ_eguEUPACI" />
 <title>烈哥客家面 Leekko Hakka Mee · 怡保客家手作面 · 自1974</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/favicon.svg">
 
 <!-- ============================================================
      SEO / 社交分享 / 本地结构化数据
-     ⚠️ 部署到正式域名后，把下方 3 处 https://leekkohakkamee.com
-        全部替换成真实域名（canonical / og:url / og:image / JSON-LD）
+     正式域名：https://leekkohakkamee.com （Cloudflare 注册，2026-06-08）
+     canonical / og:url / og:image / JSON-LD 均已指向该域名。
      ============================================================ -->
 <meta name="description" content="烈哥客家面 Leekko Hakka Mee — 怡保客家手作面老字号，自 1974 年三代传承。全蛋手作面、手工酿料、西刀鱼丸，凌晨现做、日日新鲜。翠林城 Bandar Cyber 新店 6 月 5 日试营业。">
 <meta name="robots" content="index, follow">
@@ -34,42 +61,123 @@
 <meta name="twitter:description" content="三代传承，一根正艾木棍，压出半世纪不曾改变的古早味。">
 <meta name="twitter:image" content="https://leekkohakkamee.com/uploads/store_cyber.jpg">
 
-<!-- 本地商家结构化数据 (Google 餐厅卡 / 本地搜索) -->
+<!-- 本地商家结构化数据 — 多分店 (3 家 · Google 餐厅卡 / 本地搜索)
+     地址/电话/营业时间/坐标均 2026-06-14 经 Google Maps 逐家核实。 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "烈哥客家面 Leekko Hakka Mee",
-  "image": "https://leekkohakkamee.com/uploads/store_cyber.jpg",
-  "url": "https://leekkohakkamee.com/",
-  "telephone": "+60165376998",
-  "servesCuisine": ["Hakka", "Chinese", "Noodles"],
-  "priceRange": "RM1–RM20",
-  "foundingDate": "1974",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "No. 26, Jalan Lapangan Siber 6, Bandar Cyber",
-    "addressLocality": "Ipoh",
-    "postalCode": "31350",
-    "addressRegion": "Perak",
-    "addressCountry": "MY"
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-    "opens": "07:00",
-    "closes": "13:00"
-  }],
-  "sameAs": [
-    "https://www.instagram.com/leekko_hakkamee/",
-    "https://www.facebook.com/Leekgor.Hakkamee.1974/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://leekkohakkamee.com/#brand",
+      "name": "烈哥客家面 Leekko Hakka Mee",
+      "url": "https://leekkohakkamee.com/",
+      "logo": "https://leekkohakkamee.com/favicon.svg",
+      "foundingDate": "1974",
+      "sameAs": [
+        "https://www.instagram.com/leekko_hakkamee/",
+        "https://www.facebook.com/Leekgor.Hakkamee.1974/"
+      ]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://leekkohakkamee.com/#bandar-cyber",
+      "name": "烈哥客家面 Leekko Hakka Mee — 翠林城 Bandar Cyber",
+      "parentOrganization": { "@id": "https://leekkohakkamee.com/#brand" },
+      "image": "https://leekkohakkamee.com/uploads/store_cyber.jpg",
+      "url": "https://leekkohakkamee.com/",
+      "telephone": "+60165376998",
+      "servesCuisine": ["Hakka", "Chinese", "Noodles"],
+      "priceRange": "RM1–RM20",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. 26, Jalan Lapangan Siber 6, Bandar Cyber",
+        "addressLocality": "Ipoh",
+        "postalCode": "31350",
+        "addressRegion": "Perak",
+        "addressCountry": "MY"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 4.5452908, "longitude": 101.1124176 },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "07:00", "closes": "13:00"
+      }]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://leekkohakkamee.com/#jalan-theatre",
+      "name": "烈哥客家面 Leekko Hakka Mee — Jalan Theatre",
+      "parentOrganization": { "@id": "https://leekkohakkamee.com/#brand" },
+      "image": "https://leekkohakkamee.com/uploads/store_cyber.jpg",
+      "url": "https://leekkohakkamee.com/",
+      "telephone": "+601120902248",
+      "servesCuisine": ["Hakka", "Chinese", "Noodles"],
+      "priceRange": "RM1–RM20",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18, Jalan Theatre, Taman Jubilee",
+        "addressLocality": "Ipoh",
+        "postalCode": "30300",
+        "addressRegion": "Perak",
+        "addressCountry": "MY"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 4.594732, "longitude": 101.083185 },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "07:00", "closes": "12:30"
+      }]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://leekkohakkamee.com/#taman-hoover",
+      "name": "烈哥客家面 Leekko Hakka Mee — Taman Hoover",
+      "parentOrganization": { "@id": "https://leekkohakkamee.com/#brand" },
+      "image": "https://leekkohakkamee.com/uploads/store_cyber.jpg",
+      "url": "https://leekkohakkamee.com/",
+      "telephone": "+60143039382",
+      "servesCuisine": ["Hakka", "Chinese", "Noodles"],
+      "priceRange": "RM1–RM20",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12, Jalan Bharu, Taman Hoover",
+        "addressLocality": "Ipoh",
+        "postalCode": "31650",
+        "addressRegion": "Perak",
+        "addressCountry": "MY"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 4.5846468, "longitude": 101.0846687 },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "07:00", "closes": "12:00"
+      }]
+    }
   ]
 }
 </script>
 
-<link rel="stylesheet" href="leekko/leekko.css">
+<!-- 字体：preconnect 提前握手 + 异步加载（不阻塞首屏渲染）；display=swap 先用系统字体兜底 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+      media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap">
+</noscript>
+
+<link rel="stylesheet" href="leekko/leekko.css?v=2">
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W57Z9JVS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ======================= NAV ======================= -->
 <nav class="nav" id="nav">
@@ -106,7 +214,7 @@
 
 <!-- ======================= HERO ======================= -->
 <header class="hero" id="top">
-  <img class="hero-bg" src="uploads/craft_1.png" alt="凌晨揉面的师傅">
+  <img class="hero-bg" src="uploads/craft_1.webp" alt="凌晨揉面的师傅" width="661" height="827" fetchpriority="high" decoding="async">
   <div class="hero-veil"></div>
   <div class="hero-inner">
     <span class="eyebrow reveal" data-i18n="hero.eyebrow">怡保 · 客家手作面</span>
@@ -178,7 +286,7 @@
           <p data-i18n="story.t1p">黄烈（Wong Leek）在怡保国泰茶室支起面档，以家乡的客家手作面起家。一根正艾木棍，从此开始压面。</p>
           <span class="en" data-i18n="story.t1en">Wong Leek starts the stall at Cathay Tea House, Ipoh</span>
         </div>
-        <div class="tl-photo"><img src="uploads/craft_8.png" alt="家族旧照"></div>
+        <div class="tl-photo"><img src="uploads/craft_8.webp" alt="家族旧照" width="825" height="829" loading="lazy" decoding="async"></div>
       </article>
 
       <article class="tl-item reveal">
@@ -188,7 +296,7 @@
           <p data-i18n="story.t2p">女婿何德财（Ho Teck Chai）接过手艺，承袭岳父的压面绝活，凌晨三时起灶，把全蛋面的筋道一代代传下去。</p>
           <span class="en" data-i18n="story.t2en">Son-in-law Ho Teck Chai joins and learns the recipe</span>
         </div>
-        <div class="tl-photo"><img src="uploads/employee.png" alt="第二代手作"></div>
+        <div class="tl-photo"><img src="uploads/employee.webp" alt="第二代手作" width="768" height="1020" loading="lazy" decoding="async"></div>
       </article>
 
       <article class="tl-item reveal">
@@ -198,7 +306,7 @@
           <p data-i18n="story.t3p">招牌挂上的那天，第二间店在翠林城 Bandar Cyber 试营业。从一个小档口走到今天，传统竹升客家面的手艺，得以继续传承下去。</p>
           <span class="en" data-i18n="story.t3en">A second shop opens at Bandar Cyber, Ipoh</span>
         </div>
-        <div class="tl-photo"><img src="uploads/store_cyber.jpg" alt="翠林城新店招牌"></div>
+        <div class="tl-photo"><img src="uploads/store_cyber.webp" alt="翠林城新店招牌" width="940" height="690" loading="lazy" decoding="async"></div>
       </article>
     </div>
 
@@ -221,7 +329,7 @@
 
     <div class="craft-list">
       <article class="craft-row reveal">
-        <div class="craft-img"><img src="uploads/craft_1.png" alt="全蛋揉面"></div>
+        <div class="craft-img"><img src="uploads/craft_1.webp" alt="全蛋揉面" width="661" height="827" loading="lazy" decoding="async"></div>
         <div class="craft-txt">
           <span class="craft-num" data-i18n="craft.n1">01 / 全蛋制作</span>
           <h3 data-i18n="craft.h1">不加一滴水</h3>
@@ -231,7 +339,7 @@
       </article>
 
       <article class="craft-row reveal">
-        <div class="craft-img"><img src="uploads/craft_5.png" alt="木棍压面"></div>
+        <div class="craft-img"><img src="uploads/craft_5.webp" alt="木棍压面" width="823" height="826" loading="lazy" decoding="async"></div>
         <div class="craft-txt">
           <span class="craft-num" data-i18n="craft.n2">02 / 正艾木棍碾压</span>
           <h3 data-i18n="craft.h2b">同一根木棍，用了五十年</h3>
@@ -241,7 +349,7 @@
       </article>
 
       <article class="craft-row reveal">
-        <div class="craft-img"><img src="uploads/craft_4.png" alt="凌晨制面"></div>
+        <div class="craft-img"><img src="uploads/craft_4.webp" alt="凌晨制面" width="820" height="825" loading="lazy" decoding="async"></div>
         <div class="craft-txt">
           <span class="craft-num" data-i18n="craft.n3">03 / 凌晨三时开工</span>
           <h3 data-i18n="craft.h3b">天未亮，面先香</h3>
@@ -251,7 +359,7 @@
       </article>
 
       <article class="craft-row reveal">
-        <div class="craft-img"><img src="uploads/craft_3.png" alt="手工酿料"></div>
+        <div class="craft-img"><img src="uploads/craft_3.webp" alt="手工酿料" width="821" height="823" loading="lazy" decoding="async"></div>
         <div class="craft-txt">
           <span class="craft-num" data-i18n="craft.n4">04 / 冷冻汆烫</span>
           <h3 data-i18n="craft.h4b">爽脆弹牙的秘密</h3>
@@ -326,9 +434,9 @@
     </div>
 
     <div class="menu-imgs reveal">
-      <img src="uploads/food.png" alt="客家干捞面">
-      <img src="uploads/food_5.png" alt="客家汤面">
-      <img src="uploads/food_3.png" alt="手工酿料">
+      <img src="uploads/food.webp" alt="客家干捞面" width="765" height="1020" loading="lazy" decoding="async">
+      <img src="uploads/food_5.webp" alt="客家汤面" width="765" height="1020" loading="lazy" decoding="async">
+      <img src="uploads/food_3.webp" alt="手工酿料" width="765" height="1020" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -344,7 +452,7 @@
 
     <article class="store-feature reveal">
       <div class="sf-photo">
-        <img src="uploads/store_cyber.jpg" alt="翠林城新店招牌挂上">
+        <img src="uploads/store_cyber.webp" alt="翠林城新店招牌挂上" width="940" height="690" loading="lazy" decoding="async">
         <span class="sf-ribbon"><span class="dot"></span><span data-i18n="find.ribbon">6月5日 试营业 · NOW OPEN</span></span>
       </div>
       <div class="store-info sf-info">
@@ -372,7 +480,7 @@
     <h3 class="more-stores-label reveal" data-i18n="find.more">其他门店 · More Locations</h3>
     <div class="stores">
       <article class="store-card reveal">
-        <a class="store-map" href="https://www.google.com/maps/search/?api=1&amp;query=166%20Jalan%20Sultan%20Iskandar%2C%20Taman%20Jubilee%2C%20Ipoh" target="_blank" rel="noopener noreferrer" aria-label="在 Google 地图查看 休罗街本店">
+        <a class="store-map" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20%40%20Jalan%20Theatre%2C%20Taman%20Jubilee%2C%20Ipoh" target="_blank" rel="noopener noreferrer" aria-label="在 Google 地图查看 Jalan Theatre 店">
           <span class="tag">Taman Jubilee, Ipoh</span>
           <div class="road h" style="top:38%"></div>
           <div class="road v" style="left:42%"></div>
@@ -381,18 +489,22 @@
           </div>
         </a>
         <div class="store-info">
-          <span class="badge" data-i18n="find.s1Badge">休罗街本店 · Original</span>
-          <h3 data-i18n="find.s1Name">休罗街本店</h3>
+          <span class="badge" data-i18n="find.s1Badge">市区老店 · Town</span>
+          <h3 data-i18n="find.s1Name">Jalan Theatre 店</h3>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=166%20Jalan%20Sultan%20Iskandar%2C%20Taman%20Jubilee%2C%20Ipoh" target="_blank" rel="noopener noreferrer">166, Jalan Sultan Iskandar, Taman Jubilee, 30000 Ipoh, Perak</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20%40%20Jalan%20Theatre%2C%20Taman%20Jubilee%2C%20Ipoh" target="_blank" rel="noopener noreferrer">18, Jalan Theatre, Taman Jubilee, 30300 Ipoh, Perak</a>
+          </div>
+          <div class="store-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+            <a href="tel:+601120902248">011-2090 2248</a>
           </div>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <span data-i18n="find.s1Hours">营业时间以 Google 地图为准</span>
+            <span data-i18n="find.s1Hours">每日 7:00am – 12:30pm<br><span class="closed">每逢星期五休息</span></span>
           </div>
           <div class="store-cta">
-            <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=166%20Jalan%20Sultan%20Iskandar%2C%20Taman%20Jubilee%2C%20Ipoh" target="_blank" rel="noopener noreferrer" data-i18n="find.directions">查看路线 <span class="arr">→</span></a>
+            <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%20%40%20Jalan%20Theatre%2C%20Taman%20Jubilee%2C%20Ipoh" target="_blank" rel="noopener noreferrer" data-i18n="find.directions">查看路线 <span class="arr">→</span></a>
           </div>
         </div>
       </article>
@@ -419,7 +531,7 @@
           </div>
           <div class="store-row">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <span data-i18n="find.s2Hours">每日 7:00am 起 · 营业时间见地图</span>
+            <span data-i18n="find.s2Hours">每日 7:00am – 12:00pm<br><span class="closed">每逢星期五休息</span></span>
           </div>
           <div class="store-cta">
             <a class="store-link" href="https://www.google.com/maps/search/?api=1&amp;query=Leekko%20Hakka%20Mee%2C%20Taman%20Hoover%2C%20Ipoh" target="_blank" rel="noopener noreferrer" data-i18n="find.directions">查看路线 <span class="arr">→</span></a>
@@ -439,18 +551,18 @@
     </div>
 
     <div class="gal-grid reveal">
-      <figure><img src="uploads/food_1.png" alt="客家汤面" loading="lazy"></figure>
-      <figure><img src="uploads/craft_2.png" alt="酿料手作" loading="lazy"></figure>
-      <figure><img src="uploads/mee_1.png" alt="手工面" loading="lazy"></figure>
-      <figure><img src="uploads/craft_7.png" alt="手打鱼丸" loading="lazy"></figure>
-      <figure><img src="uploads/food_3.png" alt="炸酿料" loading="lazy"></figure>
-      <figure><img src="uploads/craft_9.png" alt="店内书法墙" loading="lazy"></figure>
-      <figure><img src="uploads/food_13.png" alt="一桌面食" loading="lazy"></figure>
-      <figure><img src="uploads/coffee.png" alt="古早白咖啡" loading="lazy"></figure>
-      <figure><img src="uploads/craft_6.png" alt="酿豆腐" loading="lazy"></figure>
-      <figure><img src="uploads/sence_1.png" alt="店内一隅" loading="lazy"></figure>
-      <figure><img src="uploads/food_4.png" alt="汤面配料" loading="lazy"></figure>
-      <figure><img src="uploads/mee_2.png" alt="干捞面" loading="lazy"></figure>
+      <figure><img src="uploads/food_1.webp" alt="客家汤面" width="1360" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/craft_2.webp" alt="酿料手作" width="824" height="823" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/mee_1.webp" alt="手工面" width="1360" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/craft_7.webp" alt="手打鱼丸" width="822" height="822" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/food_3.webp" alt="炸酿料" width="765" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/craft_9.webp" alt="店内书法墙" width="822" height="622" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/food_13.webp" alt="一桌面食" width="765" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/coffee.webp" alt="古早白咖啡" width="765" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/craft_6.webp" alt="酿豆腐" width="823" height="827" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/sence_1.webp" alt="店内一隅" width="1360" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/food_4.webp" alt="汤面配料" width="765" height="1020" loading="lazy" decoding="async"></figure>
+      <figure><img src="uploads/mee_2.webp" alt="干捞面" width="1360" height="1020" loading="lazy" decoding="async"></figure>
     </div>
 
     <div class="social-cta reveal">
