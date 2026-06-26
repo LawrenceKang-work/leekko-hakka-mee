@@ -39,19 +39,31 @@ if (!cfgRow || !cfgRow.bake_config) throw new Error(`客户 ${clientId} 没有 b
 const cfg = JSON.parse(cfgRow.bake_config);
 console.log(`▶ 发布 ${clientId} → ${cfg.repo} (${cfg.platform || 'git'});目标 ${cfg.targets.length} 个`);
 
-// 2. 改动:每 (el_key, lang) 取最新一条
-const rows = await d1(`SELECT el_key,el_type,new_text,new_image_url,lang,created_at FROM feedback WHERE client_id='${clientId}' AND status='edit' ORDER BY created_at ASC`);
-const latest = {};
-for (const r of rows) { if (r.el_key) latest[r.el_key + '|' + (r.lang || 'zh')] = r; }
-
-// 3. 分流:翻译表 key(非 t:/img:)→ 文案 target(i18n-js/json);t:/img: → html target
+// 2. 改动:读出(含 page —— 多页面分流用)
+const rows = await d1(`SELECT el_key,el_type,new_text,new_image_url,lang,page,created_at FROM feedback WHERE client_id='${clientId}' AND status='edit' ORDER BY created_at ASC`);
 const htmlKey = k => k.startsWith('t:') || k.startsWith('img:');
+const pageNorm = p => (p || '/').replace(/index\.html$/, '').replace(/\/?$/, '/');
+// 取最新:html 元素按 (page,key) 唯一(元素单一,语言无关);翻译表按 (key,lang) 唯一
+const latest = {};
+for (const r of rows) {
+  if (!r.el_key) continue;
+  const uk = htmlKey(r.el_key) ? 'h|' + pageNorm(r.page) + '|' + r.el_key : 'i|' + r.el_key + '|' + (r.lang || 'zh');
+  latest[uk] = r; // ORDER BY ASC → 覆盖为最新
+}
+
+// 3. 分流:翻译表 key → json target(全局,不分页);t:/img: → 按 page 烧进对应页面的 html
+const htmlTargets = cfg.targets.filter(t => t.format === 'html');
+const jsonTarget = cfg.targets.find(t => t.format !== 'html');
 const buckets = new Map(cfg.targets.map(t => [t.file, []]));
 let dropped = 0;
-for (const k in latest) {
-  const r = latest[k];
+for (const uk in latest) {
+  const r = latest[uk];
   if (r.el_type === 'image' && (!r.new_image_url || r.new_image_url.startsWith('('))) { dropped++; continue; } // 占位上传图跳过
-  const target = cfg.targets.find(t => htmlKey(r.el_key) ? t.format === 'html' : t.format !== 'html');
+  let target;
+  if (htmlKey(r.el_key)) {
+    const rp = pageNorm(r.page);
+    target = htmlTargets.find(t => pageNorm(t.page) === rp) || htmlTargets.find(t => pageNorm(t.page) === '/'); // 没配 page 的兜底首页
+  } else target = jsonTarget;
   if (!target) { dropped++; continue; }
   buckets.get(target.file).push({ key: r.el_key, lang: r.lang || 'zh', value: r.el_type === 'image' ? r.new_image_url : r.new_text, type: r.el_type });
 }
